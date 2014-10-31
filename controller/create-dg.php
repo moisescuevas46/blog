@@ -16,6 +16,7 @@
 			echo "Successfuly created database: " . $database;//prints out the text
 		}
 	}
+	
 	else{
 		echo "Database already exists";//echos if the database already exists or doesnt if it doesnt
 	}
