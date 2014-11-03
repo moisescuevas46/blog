@@ -3,6 +3,6 @@
 ?>
 <nav>
 	<ul>
-		<li><a href="<?php echo $path . "post.php"; ?>">BLOG POST FORM</li> 
+		<li><a href="<?php echo $path . "post.php"; ?>">BLOG POST FORM</li> //echos "PATH" variable
 	</ul>
 </nav>
