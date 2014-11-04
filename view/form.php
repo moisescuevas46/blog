@@ -7,6 +7,11 @@
 
 	<div>
 		<label for="post">Post: </label>
-		<textarea name="post"></textarea> //makes a text box
+		<textarea name="post"></textarea> 
+	</div> 
+	<div>
+		<button type="submit">Submit</button>
 	</div>
 </form>
+<!-- makes a text box and a title box when clicked on-->
+<!-- makes a submit button -->
