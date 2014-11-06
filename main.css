@@ -4,3 +4,9 @@ body{
 	text-align: left;
 
 }
+
+@media (max-width: 320px) {
+    body {
+        background-color: blue;
+    }
+}
