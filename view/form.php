@@ -1,5 +1,5 @@
 <h1> Create Blog Post</h1>	
-<form>
+<form method="post" action="">
 <div>
 	<label for "title">Title: </label>
 	<input type="text" name="title" />

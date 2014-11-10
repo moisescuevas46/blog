@@ -10,3 +10,10 @@ body{
         background-color: blue;
     }
 }
+/*makes the color change when bigger for iphone*/
+@media(min-width : 1024px){
+	body{
+		background-color: purple;
+	}
+}
+/*makes the screen fit for the ipad*/
