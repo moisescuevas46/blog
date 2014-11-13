@@ -13,6 +13,7 @@
 		else{
 			echo "<p>$connection->error</p>";
 		}
+		
 	$connection->close();
 ?>
 <!-- echos title and post and saves -->
