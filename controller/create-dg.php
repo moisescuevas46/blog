@@ -30,5 +30,10 @@
 		//the wat tables are connected to eachother
 		. "PRIMARY KEY (id))");
 
-
+	if($query){
+		echo "<p>Succesfully created table: post </p>";
+	}
+	else{
+		echo "<p>$connection->error</p>";
+	}
 	$connection->close(); //closes the connection

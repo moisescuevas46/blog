@@ -11,3 +11,4 @@
 	$connection->close();
 ?>
 <!-- echos title and post and saves -->
+<!-- makes a connection to database.php -->
