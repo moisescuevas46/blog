@@ -1,3 +1,3 @@
 <?php 
-	$path = "/blog/";//finds the blog
+	$path = "/blog/"; //finds the blog
 ?>
