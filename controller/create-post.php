@@ -1,5 +1,5 @@
 <?php 
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 	
 	$connection = new mysqli($host, $username, $password, $database);
 
@@ -19,3 +19,6 @@
 <!-- makes a connection to database.php -->
 <!-- lets us insert info to our database! -->
 <!-- echos if it has connected or if it has not connected to the database to post -->
+<!-- INSERT INTO inserts a defined variable into MYSQL DB -->
+<!-- the defined variables are query and it connects to a query -->p
+<!-- changed some comments and changed some code to make the posts work like database to config.php -->

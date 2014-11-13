@@ -1,5 +1,5 @@
 <?php 
-	require_once(__DIR__ . "/../model/database.php");//directs to another file
+	require_once(__DIR__ . "/../model/config.php");//directs to another file
 
 	$connection = new mysqli ($host, $username, $password);//gets some of the content from database
 
