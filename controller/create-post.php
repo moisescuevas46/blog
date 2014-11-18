@@ -9,6 +9,9 @@
 	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
 		if($query){
 			echo "<p>Successfully inserted post: $title</p>";
+			echo "Today is " . date("l") . "<br>";
+			echo "Today is " . date("Y-m-d") . "<br>";
+			echo "The time is " . date("h:i:sa");
 		}
 		else{
 			echo "<p>$connection->error</p>";

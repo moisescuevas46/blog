@@ -7,7 +7,10 @@
 	</title>
 </head>
 <body>
-	<div class="image">
-		
-	</div>
+	<?php 
+	echo "Today is " . date("l") . "<br>";
+	echo "Today is " . date("Y-m-d") . "<br>";
+	echo "The time is " . date("h:i:sa");
+	?>
 
+<!-- makes the date, the time and the week name appear -->
