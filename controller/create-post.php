@@ -17,7 +17,7 @@
 	$connection->close();
 ?>
 <!-- echos title and post and saves -->
-<!-- makes a connection to database.php -->
+<!-- makes a connection to config.php -->
 <!-- lets us insert info to our database! -->
 <!-- echos if it has connected or if it has not connected to the database to post -->
 <!-- INSERT INTO inserts a defined variable into MYSQL DB -->
