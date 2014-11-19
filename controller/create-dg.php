@@ -1,8 +1,6 @@
 <?php 
 	require_once(__DIR__ . "/../model/config.php");//directs to another file
 
-	$connection = new mysqli ($host, $username, $password);//gets some of the content from database
-
 	if($connection->connect_error){
 		die("Error: . $connection->connect_error");//if it doesnt connect print out die
 	}
@@ -36,4 +34,4 @@
 	else{
 		echo "<p>$connection->error</p>";
 	}
-	$connection->close(); //closes the connection
+	$connection->clos(); //closes the connection
