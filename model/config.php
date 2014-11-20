@@ -1,4 +1,5 @@
 <?php 
+	require_once(__DIR__ . "/database.php");
 	$path = "/blog/"; //finds the blog
 
 	$host = "localhost"; //host name
@@ -7,4 +8,5 @@
 	$database = "blog_db"; //database name
 
 	$connection = new Database($host, $username, $password, $database);
+	
 ?>

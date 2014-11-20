@@ -1,24 +1,6 @@
 <?php 
 	require_once(__DIR__ . "/../model/config.php");//directs to another file
 
-	if($connection->connect_error){
-		die("Error: . $connection->connect_error");//if it doesnt connect print out die
-	}
-	
-	$exists = $connection->select_db($database);//tries to acces a database
-
-	if (!$exists) {
-		$query = $connection->query("CREATE DATABASE $database");//gets a database
-
-		if($query){
-			echo "Successfuly created database: " . $database;//prints out the text
-		}
-	}
-	
-	else{
-		echo "Database already exists";//echos if the database already exists or doesnt if it doesnt
-	}
-
 	$query = $connection->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		//string of characters
@@ -34,4 +16,3 @@
 	else{
 		echo "<p>$connection->error</p>";
 	}
-	$connection->clos(); //closes the connection
