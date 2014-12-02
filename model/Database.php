@@ -5,39 +5,41 @@
 		private $username;
 		private $password;
 		private $database;
+		public $error;
 	
 	// <!-- makes a variable private by only making it available in this file -->
 
-	public function __contruct($host, $username, $password, $database){
+	public function __construct($host, $username, $password, $database){
 		$this->host = $host;
 		$this->username = $username;
 		$this->password = $password;
 		$this->database = $database;
 
-			$this->connection = new mysql($host, $username, $password);
+		$this->connection = new mysqli($host, $username, $password);
 
-	if($this->connection->connect_error){
-		die("Error: . $this->connection->connect_error");//if it doesnt connect print out die
-	}
+		if($this->connection->connect_error){
+			die("Error: . $this->connection->connect_error");//if it doesnt connect print out die
+		}
 	
-	$exists = $this->connection->select_db($database);//tries to acces a database
+		$exists = $this->connection->select_db($database);//tries to acces a database
 
-	if (!$exists) {
-		$query = $this->connection->query("CREATE DATABASE $database");//gets a database
+		if (!$exists) {
+			$query = $this->connection->query("CREATE DATABASE $database");//gets a database
 
-		if($query){
-			echo "Successfuly created database: " . $database;//prints out the text
+			if($query){
+				echo "Successfuly created database: " . $database;//prints out the text
+			}
+		}
+	
+		else {
+			echo "Database already exists";//echos if the database already exists or doesnt if it doesnt
 		}
 	}
 	
-	else{
-		echo "Database already exists";//echos if the database already exists or doesnt if it doesnt
-	}
-	}
 	// <!-- it is required to define a constructor to pass any parameters on object construction-->
 
 	public function openConnection(){
-		$this->connection = new mysql($this->host, $this->username, $this->password, $this->database);
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 		if($this->connection->connect_error){
 			die("<p>Error: . $this->connection->connect_error" . "</p>"); //if it doesnt connect it prints out die.
@@ -53,6 +55,9 @@
 	public function query($string){
 		$this->openConnection();
 		$query = $this->connection->query($string);
+		if (!$query) {
+			$this->error = $this->connection->error;
+		}
 		$this->closeConnection();
 		return $query;
 	}

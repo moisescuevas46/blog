@@ -16,7 +16,7 @@
 			echo "<p>$connection->error</p>";
 		}
 		
-	$connection->close();
+	
 ?>
 <!-- echos title and post and saves -->
 <!-- makes a connection to config.php -->
