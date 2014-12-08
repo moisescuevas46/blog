@@ -54,10 +54,10 @@
 // closes the connection and determines if a variable is set and is not NULL
 	public function query($string){
 		$this->openConnection();
-		$query = $this->connection->query($string);
-		if (!$query) {
-			$this->error = $this->connection->error;
-		}
+			$query = $this->connection->query($string);
+				if (!$query) {
+				$this->error = $this->connection->error;
+			}
 		$this->closeConnection();
 		return $query;
 	}

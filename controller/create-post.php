@@ -4,17 +4,17 @@
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
+	$date = new DateTime("Today");
+	$time = new DateTime("America/Los_Angeles");
 	
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 		if($query){
 			echo "<p>Successfully inserted post: $title</p>";
-			echo "Today is " . date("l") . "<br>";
-			echo "Today is " . date("Y-m-d") . "<br>";
-			echo "The time is " . date("h:i:sa");
+			echo " Posted on: " . $date->format('M/D/Y') . " at " . $time->format('g:i');
 		}
-		else{
-			echo "<p>" . $_SESSION["connection"]->error . "</p>";
-		}
+			else{
+				echo "<p>" . $_SESSION["connection"]->error . "</p>";
+			}
 		
 	
 ?>
