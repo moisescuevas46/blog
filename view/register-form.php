@@ -20,7 +20,7 @@
 
 	<div>
 		<label for="password">Password:</label>
-		<input type="text" name="password"/>
+		<input type="password" name="password"/>
 		<!-- lets users register their password -->
 	</div>
 

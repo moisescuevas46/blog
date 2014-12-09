@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/database.php");
+	require_once(__DIR__ . "/Database.php");
 	session_start();
 	$path = "/blog/"; //finds the blog
 

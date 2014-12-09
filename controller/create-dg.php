@@ -8,7 +8,7 @@
 			//the post is text
 			. "post text NOT NULL,"
 			//the wat tables are connected to eachother
-			. "DateTime datetime NOT NULL:,"
+			. "DateTime datetime NOT NULL,"
 			. "PRIMARY KEY (id))"
 		);
 

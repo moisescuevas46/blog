@@ -32,7 +32,7 @@
 		}
 	
 		else {
-			echo "Database already exists";//echos if the database already exists or doesnt if it doesnt
+			echo "";//echos if the database already exists or doesnt if it doesnt
 		}
 	}
 	
