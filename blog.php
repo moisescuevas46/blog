@@ -8,4 +8,5 @@
 	require_once(__DIR__ . "/view/footer.php");//links to the footer php file
 	require_once(__DIR__ . "/css/blog.css");//links to css file
 	require_once(__DIR__ . "/controller/read-posts.php");
+
 ?>
