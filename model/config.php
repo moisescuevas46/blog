@@ -12,7 +12,7 @@
 
 	$database = "blog_db"; //database name
 
-	if(!isset($_session["connection"]))	{
+	if(!isset($_SESSION["connection"]))	{
 		$connection = new Database($host, $username, $password, $database);
 		$_SESSION["connection"] = $connection;
 	}

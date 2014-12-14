@@ -14,7 +14,7 @@
 
 	<div>
 		<label for="username">Username:</label>
-		<input type="to ext" name="username"/>
+		<input type="text" name="username"/>
 		<!-- lets users type in their username -->
 	</div>
 

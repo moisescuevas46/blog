@@ -1,19 +1,25 @@
 body{
-	background-color: lime;
+	background-image: url("image/Dtri.png");
 	font-size: 30px;
 	text-align: left;
 
 }
 
+header{
+	border:3px solid;
+}
+aside{
+	border
+}
 @media (max-width: 320px) {
     body {
         background-color: blue;
     }
 }
 /*makes the color change when bigger for iphone*/
-@media(min-width : 1024px){
+@media(min-width : 1280px){
 	body{
-		background-color: purple;
+		background-image: image/Dtri.png;
 	}
 }
 /*makes the screen fit for the ipad*/

@@ -28,7 +28,7 @@
 
 			if($query){
 				echo "Successfuly created database: " . $database;//prints out the text
-			}
+			} 
 		}
 	
 		else {
