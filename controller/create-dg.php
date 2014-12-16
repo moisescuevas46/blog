@@ -12,12 +12,7 @@
 			. "PRIMARY KEY (id))"
 		);
 
-		if($query){
-			echo "<p>Succesfully created table: post </p>";
-		}
-		else{
-			echo "<p>" . $_SESSION["connection"]->error . "</p>";
-		} 
+		
 		// makes it so that it echos a connection error if it isnt connected
 
 		$query = $_SESSION["connection"]->query("CREATE TABLE users ("
@@ -30,9 +25,3 @@
 
 // (#) lets the amount of letters be written in the text box
 
-if($query){
-	echo "<p>Successfuly created table: users</p>";
-}
-else{
-	echo "<p>" . $_SESSION["connection"]->error . "</p>";
-}

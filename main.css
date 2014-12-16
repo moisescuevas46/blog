@@ -6,10 +6,18 @@ body{
 }
 
 header{
-	border:3px solid;
+	border:2px solid;
+	margin: 7px 0px 0px 0px;
+	position: fixed;
 }
 aside{
-	border
+	border:solid grey 2px;
+	 margin: 100px 1px 1px 750px ;
+	 position: fixed;
+}
+.post{
+	border:solid grey 2px;
+	margin: 7px 500px 7px 1px;
 }
 @media (max-width: 320px) {
     body {
