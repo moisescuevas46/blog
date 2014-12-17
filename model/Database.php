@@ -15,7 +15,7 @@ class Database {
 		$this->password = $password;
 		$this->database = $database;
 	 $this->connection = new mysqli($host, $username, $password);
-	 // Checks if their is an error, if so, echos it out.
+	 // Checks if there is an error, if there is, echos it out.
 	 if ($this->connection->connect_error) {
 	 	die("<p>Error: " . $connection->connect_error . "</p>");
 	 }

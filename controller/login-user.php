@@ -13,4 +13,8 @@
 			// Echoes to the user that the login was successful
 			echo "<p>Login Successful!</p>";
 		}		
-}
+		else {
+			// Echoes to the user that his given information wasn't correct
+			echo "<p>Invalid username and password</p>";
+		}
+	}

@@ -1,7 +1,7 @@
 <?php  
 	require_once(__DIR__ . "/../model/config.php");
 	if (!authenticateUser()) {
-		header("Location: " . $path . "index.php");
+		header("Location: " . $path . "blog.php");
 		die();
 	}
 
