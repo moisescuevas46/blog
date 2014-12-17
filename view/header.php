@@ -7,8 +7,9 @@
 	</title>
 	<header>
 		The Moises Cuevas Blog -- <a href="blog.php">Blog</a>-<a href="gallery.html">Gallery</a>-<a href="register.php">Register</a>-<a href="login.php">Login</a>-<a href="">Logout</a>-
+		
 	</header>
-	
+
 	<div>
 		<aside>
 			<img src="image/chelseaheart.jpg" alt="Chelsea" style="width:304px;height:228px" class="img-thumbnail">

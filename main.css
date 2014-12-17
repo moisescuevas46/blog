@@ -9,6 +9,7 @@ header{
 	border:2px solid;
 	margin: 7px 0px 0px 0px;
 	position: fixed;
+	background-color: grey;
 }
 aside{
 	border:solid grey 2px;
