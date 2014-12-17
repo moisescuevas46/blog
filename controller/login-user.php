@@ -1,19 +1,16 @@
-<?php 
+<?php
+	//Requires config.php inside this file
 	require_once(__DIR__ . "/../model/config.php");
-
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
-
+	// Selects the salt and password form the users table where the username is the username sent via the post 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
-
-	if($query->num_rows == 1){
+	if($query->num_rows == 1) {
 		$row = $query->fetch_array();
-
-		if($row["password"] === crypt($password, $row["salt"])){
+		if ($row["password"] === crypt($password, $row["salt"])) {
+			// Created a mechanism to make sure the user has been authenticated
 			$_SESSION["authenticated"] = true;
+			// Echoes to the user that the login was successful
 			echo "<p>Login Successful!</p>";
-
-		}
-	}
-
-	
+		}		
+}
